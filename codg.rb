@@ -1,6 +1,6 @@
 # ("amd64" -> "x86_64", "386" -> "i386", arm -> "armv7").
 class Codg < Formula
-  desc "Terminal-based AI coding assistant for developers"
+  desc "The next TUI code and work AI agent"
   homepage "https://github.com/vcaesar/codg"
   version "2.0.1"
   license "EULA"
@@ -10,7 +10,7 @@ class Codg < Formula
       url "https://github.com/vcaesar/codg/releases/download/v#{version}/codg_#{version}_Darwin_arm64.tar.gz"
       sha256 "REPLACE_WITH_SHA256_DARWIN_ARM64"
     end
-    
+
     on_intel do
       url "https://github.com/vcaesar/codg/releases/download/v#{version}/codg_#{version}_Darwin_x86_64.tar.gz"
       sha256 "REPLACE_WITH_SHA256_DARWIN_AMD64"
