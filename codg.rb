@@ -2,31 +2,31 @@
 class Codg < Formula
   desc "The next code and work AI agent"
   homepage "https://github.com/vcaesar/codg"
-  version "2.5.12"
+  version "2.6.2"
   license "EULA"
 
   on_macos do
     on_intel do
       url "https://github.com/vcaesar/codg/releases/download/v#{version}/codg_darwin_amd64.zip"
-      sha256 "4414f76f804acf584676eeafb2f4d09f45044417c1ef6d5d8c808683e83b01cc "
+      sha256 "9cc25f82db55360b7da3e99f11b9de60d26afe8359d9f37f3232d95c985e03d1 "
     end
 
      on_arm do
       url "https://github.com/vcaesar/codg/releases/download/v#{version}/codg_darwin_arm64.zip"
-      sha256 "bf0a6d7eb5fc17b72b29f0bcb38409f32b3caf8af6c6e15d7e94e9625b81e46f"
+      sha256 "bdcdefcf31c16906ccccddf316a17edf6449ae00d336af43109a35aa3c767d94"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/vcaesar/codg/releases/download/v#{version}/codg_linux_amd64.zip"
-      sha256 "8b509691ef318d4f67093c38d9ff4e103720017630278dcaa101dff30342232f"
+      sha256 "9f9b8019ae15e6882e791910ba97eeaffa39dc808cc1d459b0ebbc8bcf330ddf"
     end
 
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/vcaesar/codg/releases/download/v#{version}/codg_linux_arm64.zip"
-        sha256 "6083e897134629b748ba9c64c8250da4b8b4e54256cb10b71240f5b916b06108"
+        sha256 "3c79182a26cd3ada5dc78aaf1ebb04706e77ea949c8a88386b37275d0b153496"
       else
         url "https://github.com/vcaesar/codg/releases/download/v#{version}/codg_linux_armv7.zip"
         sha256 "REPLACE_WITH_SHA256_LINUX_ARMV7"
