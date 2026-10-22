@@ -3,11 +3,11 @@ cask "codg-desktop" do
   arch arm: "arm64", intel: "amd64"
   os macos: "darwin", linux: "linux"
 
-  version "2.6.5"
-  sha256 arm:          "187aa238ce742a9a84c11fdf33227d17f1ead0c45e3e01d22b3a042dac99b07f",
-         intel:        "779a198a5835702b03db719020485d974eaadbe3224e43b808faa32a21aa496c",
-         arm64_linux:  "9869c49ad4ab9cbef6a2ca9c64225d76388a7dd9bf5f211371e6b20b6f2b26fb",
-         x86_64_linux: "adfb1916816165346abeb8e86869382169d87d6b3e20bfac7c2f0bde89c65c38"
+  version "2.6.6"
+  sha256 arm:          "3a071b0bc18f26de339d48147c651f3b328bb7fd0ed47597b469d3f9fe5c03fd",
+         intel:        "a81547dbcdd0f6682a5031b8e21b8c911aed690226fe04a77cbca5c5c805dd89",
+         arm64_linux:  "818dc6091d411f35643e6157c9d48c68fceeb234846c0906d388e962e24c581a",
+         x86_64_linux: "1196725604f9f534114325eb9ebe0df911228b221e1b0b539aaab691faf4069f"
 
   on_macos do
     url "https://github.com/vcaesar/codg/releases/download/v#{version}/codg-desktop-#{os}-#{arch}.dmg"
