@@ -1,34 +1,34 @@
 class Zedsearch < Formula
   desc "Lightweight full-text search engine, an Elasticsearch alternative"
   homepage "https://github.com/vcaesar/zedsearch"
-  version "1.1.0"
+  version "1.3.1"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
       url "https://github.com/vcaesar/zedsearch/releases/download/v#{version}/zedsearch_#{version}_darwin_x86_64.tar.gz"
-      sha256 "bda5cb077961692f162ed3638cb8b5cdda7afc02328e73ba3436c33b28670eab"
+      sha256 "eaeb095ee194465e0897851ad4f964ab4fe905c78db0d5863fa2154901241d82"
     end
 
     on_arm do
       url "https://github.com/vcaesar/zedsearch/releases/download/v#{version}/zedsearch_#{version}_darwin_arm64.tar.gz"
-      sha256 "140b4d966ffc7e44f2000d832ece2d32cd2820ffdd3e5e02165027cb02ee84c1"
+      sha256 "ec8b861a43346311fca65d1265f0868e9f7443c1e6ca568b875d6e7d80522511"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/vcaesar/zedsearch/releases/download/v#{version}/zedsearch_#{version}_linux_x86_64.tar.gz"
-      sha256 "ad9a425c0f78b6e38851bfcf68b9f1845f9d5a5f6baa227bf9341bc5a54d2ca6"
+      sha256 "ad7bdc795cf7eaf83ddb6480ba95c4ef2ce78631ab25d2d7a28153e63bf9e3ec"
     end
 
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/vcaesar/zedsearch/releases/download/v#{version}/zedsearch_#{version}_linux_arm64.tar.gz"
-        sha256 "dff80182878c47db8e0ce6555472b0c4164011577f6a46516ecffe26694defea"
+        sha256 "a02cd9bc9b17e240dbbfc52f961c90ede0a8bddd4e22e0ae83c24b7c71b31cba"
       else
         url "https://github.com/vcaesar/zedsearch/releases/download/v#{version}/zedsearch_#{version}_linux_armv7.tar.gz"
-        sha256 "9a9050e5a3eba0ca85fd1e1c020a38e85d08f2f992832f120149c9af9aabdeda"
+        sha256 "a96c30a14b4308fdb34699d6c369bf870e7db527048f23affa886e04c0b05741"
       end
     end
   end
